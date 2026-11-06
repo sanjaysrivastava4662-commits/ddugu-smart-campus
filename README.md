@@ -200,11 +200,7 @@ ddugu-smart-campus/
 │   │   └── main.tsx         # Entry point
 │   ├── package.json
 │   ├── Dockerfile
-│   └── .env.example
 ├── docker-compose.yml
-├── .github/
-│   └── workflows/
-│       └── ci.yml           # GitHub Actions CI/CD
 └── README.md
 ```
 
@@ -247,7 +243,7 @@ The examination module implements a secure, time-controlled information release:
 | Auth | JWT (python-jose), bcrypt (passlib) |
 | Validation | Pydantic v2 |
 | QR Codes | qrcode (backend), qrcode.react (frontend) |
-| DevOps | Docker, Docker Compose, GitHub Actions |
+| DevOps | Docker, Docker Compose, Render Blueprint |
 
 ---
 
