@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: ddugu-smart-campus
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/health
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ADMIN_EMAIL
+        value: admin@ddugu.ac.in
+      - key: ADMIN_PASSWORD
+        value: admin123
+      - key: DATABASE_URL
+        value: sqlite:////tmp/ddugu_campus.db
+      - key: CORS_ORIGINS
+        value: https://ddugu-smart-campus.onrender.com
